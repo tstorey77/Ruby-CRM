@@ -1,4 +1,12 @@
-<h3 class="title"> All Customers </h3>
+<h3 class="title"> All Customers Missing an Email</h3>
+<div>
+  <ul>
+    <li>
+      <%= link_to 'Home', root_path%> |
+      <%= link_to 'Alphabetized', alphabetized_path%>
+    </li>
+  </ul>
+</div>
 <div class="columns is-multiline">
   <%= render partial: '/customers/customer',
              collection: @Customer %>
